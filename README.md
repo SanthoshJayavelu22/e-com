@@ -2,6 +2,8 @@
 
 E-Shop is a simple e-commerce website that allows users to browse a variety of products, filter and sort them, and add them to their cart. It integrates a loading spinner animation to show when the data is being fetched and uses local storage to maintain the user's cart data.
 
+## Live site - https://digital-mantraaz-e-shop-santhosh.netlify.app/
+
 ## Features
 - **Product List**: Displays a list of products fetched from an external API (Fake Store API).
 - **Filter and Sort**: Filters products by category and sorts them by price (low-high or high-low).
