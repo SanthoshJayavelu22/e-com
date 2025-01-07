@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# E-Shop
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+E-Shop is a simple e-commerce website that allows users to browse a variety of products, filter and sort them, and add them to their cart. It integrates a loading spinner animation to show when the data is being fetched and uses local storage to maintain the user's cart data.
 
-## Available Scripts
+## Features
+- **Product List**: Displays a list of products fetched from an external API (Fake Store API).
+- **Filter and Sort**: Filters products by category and sorts them by price (low-high or high-low).
+- **Add to Cart**: Allows users to add products to their shopping cart.
+- **Cart Page**: Users can view their cart, update quantities, or remove items.
+- **Local Storage**: Cart data is saved in local storage, allowing the cart to persist even after a page refresh.
+- **Loading Spinner**: Shows a spinner animation while products are being loaded.
+- **Toast Notifications**: Provides feedback when a product is added to the cart.
 
-In the project directory, you can run:
+## Technologies Used
+- **React**: For building the user interface and managing state.
+- **CSS**: For styling the components.
+- **Fake Store API**: For fetching the product data.
+- **Local Storage**: For persisting cart data across sessions.
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/eshop.git
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. Install the dependencies:
+cd e-com
+npm install
 
-### `npm test`
+3.Start the development server:
+npm start
+Open your browser and go to http://localhost:3000 to view the app.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+How to Use
+Browse Products: You can view a list of products on the homepage. Filter them by category and sort by price.
+Add to Cart: Click the "Add to Cart" button next to any product to add it to your shopping cart.
+View Cart: You can view your cart by clicking the "View Cart" link in the navigation bar. From there, you can update the quantities or remove items.
+Loading Spinner: A loading spinner is displayed while products are being fetched from the API.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Animation Choices
+Spinner Design:
+The spinner is created using border properties to form a circular shape, with the top border having a different color (#3498db for a blue shade) to create the rotating effect.
+This design ensures the spinner is visually clean and simple while providing a clear indication of loading.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Rotation Effect:
+The rotation is handled using CSS @keyframes, where the spinner rotates from 0deg to 360deg infinitely over 2 seconds (animation: spin 2s linear infinite;).
+The linear timing function ensures the animation runs at a constant speed, and the infinite keyword allows the rotation to continue without interruption.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Positioning:
+The spinner is centered on the page using flexbox (display: flex, justify-content: center, align-items: center) to ensure it is always positioned in the center of the screen.
