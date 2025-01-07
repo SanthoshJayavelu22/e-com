@@ -1,0 +1,147 @@
+/* Global styles */
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Ensures items are vertically centered */
+  padding: 20px;
+  background-color: #07204a;
+  color: #cfb563;
+}
+
+.navbar .logo {
+  font-size: 1.5em;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.navbar .nav-links {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar .nav-links li {
+  cursor: pointer;
+}
+
+.cart-link {
+  display: inline-block;
+  background-color: #c59700;
+  color: white;
+  padding: 15px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.cart-link:hover {
+  background-color: #0e377d;
+}
+
+/* Scroll-to-top button */
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Hover effect on buttons */
+button:hover,
+.add-to-cart-btn:hover {
+  background-color: #0e377d;
+  color: #ffffff;
+}
+
+/* Spinner container */
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh; /* Adjust height to center the spinner */
+}
+
+/* Spinner animation */
+.spinner {
+  border: 8px solid #f3f3f3; /* Light gray */
+  border-top: 8px solid #07204a; /* Blue */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+/* Keyframe for spinning */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+}
+
+
+
+
+@media screen and (max-width: 480px) {
+  .navbar .logo {
+    font-size: 1em !important;
+  }
+
+
+  .filter-bar {
+    display: flex;
+    gap: 3px;
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+ 
+}

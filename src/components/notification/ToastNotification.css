@@ -1,0 +1,27 @@
+
+.toast-notification {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  background-color: #07204a;
+  color: #cfb563;
+  padding: 10px;
+  border-radius: 5px;
+  animation: fadeInOut 3s forwards;
+  z-index: 99999;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
