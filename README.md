@@ -38,14 +38,14 @@ Open your browser and go to http://localhost:3000 to view the app.
 **Loading Spinner**: A loading spinner is displayed while products are being fetched from the API.
 
 
-Animation Choices
--**Spinner Design**:
+## Animation Choices
+**Spinner Design**:
 The spinner is created using border properties to form a circular shape, with the top border having a different color (#3498db for a blue shade) to create the rotating effect.
 This design ensures the spinner is visually clean and simple while providing a clear indication of loading.
 
--**Rotation Effect**:
+**Rotation Effect**:
 The rotation is handled using CSS @keyframes, where the spinner rotates from 0deg to 360deg infinitely over 2 seconds (animation: spin 2s linear infinite;).
 The linear timing function ensures the animation runs at a constant speed, and the infinite keyword allows the rotation to continue without interruption.
 
-Positioning:
+*Positioning**:
 The spinner is centered on the page using flexbox (display: flex, justify-content: center, align-items: center) to ensure it is always positioned in the center of the screen.
