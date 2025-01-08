@@ -47,5 +47,5 @@ This design ensures the spinner is visually clean and simple while providing a c
 The rotation is handled using CSS @keyframes, where the spinner rotates from 0deg to 360deg infinitely over 2 seconds (animation: spin 2s linear infinite;).
 The linear timing function ensures the animation runs at a constant speed, and the infinite keyword allows the rotation to continue without interruption.
 
-*Positioning**:
+**Positioning**:
 The spinner is centered on the page using flexbox (display: flex, justify-content: center, align-items: center) to ensure it is always positioned in the center of the screen.
