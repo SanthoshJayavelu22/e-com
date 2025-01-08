@@ -17,14 +17,14 @@ const HomePage = ({ onAddToCart }) => {
   useEffect(() => {
     const fetchProducts = async () => {
       setIsLoading(true);
-      setError(null); // Reset error state on each request
+      setError(null); 
       const cachedProducts = localStorage.getItem("products");
 
-      // Use cached data if available
+      
       if (cachedProducts) {
         setProducts(JSON.parse(cachedProducts));
         setFilteredProducts(JSON.parse(cachedProducts));
-        setTimeout(() => setIsLoading(false), 2000); // Simulate delay of 2 seconds
+        setTimeout(() => setIsLoading(false), 2000);
       } else {
         try {
           const response = await fetch("https://fakestoreapi.com/products", { timeout: 5000 });
@@ -36,8 +36,8 @@ const HomePage = ({ onAddToCart }) => {
           const data = await response.json();
           setProducts(data);
           setFilteredProducts(data);
-          localStorage.setItem("products", JSON.stringify(data)); // Cache the data
-          setTimeout(() => setIsLoading(false), 2000); // Simulate delay of 2 seconds
+          localStorage.setItem("products", JSON.stringify(data)); 
+          setTimeout(() => setIsLoading(false), 2000); 
         } catch (error) {
           setError("Failed to load products. Please try again later.");
           console.error("Failed to fetch products:", error);
