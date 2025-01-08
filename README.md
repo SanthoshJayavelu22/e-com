@@ -27,23 +27,23 @@ E-Shop is a simple e-commerce website that allows users to browse a variety of p
 cd e-com
 npm install
 
-3.Start the development server:
+3. Start the development server:
 npm start
 Open your browser and go to http://localhost:3000 to view the app.
 
 How to Use
--Browse Products: You can view a list of products on the homepage. Filter them by category and sort by price.
--Add to Cart: Click the "Add to Cart" button next to any product to add it to your shopping cart.
--View Cart: You can view your cart by clicking the "View Cart" link in the navigation bar. From there, you can update the quantities or remove items.
--Loading Spinner: A loading spinner is displayed while products are being fetched from the API.
+-**Browse Products**: You can view a list of products on the homepage. Filter them by category and sort by price.
+-**Add to Cart**: Click the "Add to Cart" button next to any product to add it to your shopping cart.
+-**View Cart**: You can view your cart by clicking the "View Cart" link in the navigation bar. From there, you can update the quantities or remove items.
+-**Loading Spinner**: A loading spinner is displayed while products are being fetched from the API.
 
 
 Animation Choices
--Spinner Design:
+-**Spinner Design**:
 The spinner is created using border properties to form a circular shape, with the top border having a different color (#3498db for a blue shade) to create the rotating effect.
 This design ensures the spinner is visually clean and simple while providing a clear indication of loading.
 
-Rotation Effect:
+-**Rotation Effect**:
 The rotation is handled using CSS @keyframes, where the spinner rotates from 0deg to 360deg infinitely over 2 seconds (animation: spin 2s linear infinite;).
 The linear timing function ensures the animation runs at a constant speed, and the infinite keyword allows the rotation to continue without interruption.
 
