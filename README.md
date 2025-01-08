@@ -9,7 +9,6 @@ E-Shop is a simple e-commerce website that allows users to browse a variety of p
 - **Filter and Sort**: Filters products by category and sorts them by price (low-high or high-low).
 - **Add to Cart**: Allows users to add products to their shopping cart.
 - **Cart Page**: Users can view their cart, update quantities, or remove items.
-- **Local Storage**: Cart data is saved in local storage, allowing the cart to persist even after a page refresh.
 - **Loading Spinner**: Shows a spinner animation while products are being loaded.
 - **Toast Notifications**: Provides feedback when a product is added to the cart.
 
@@ -17,7 +16,6 @@ E-Shop is a simple e-commerce website that allows users to browse a variety of p
 - **React**: For building the user interface and managing state.
 - **CSS**: For styling the components.
 - **Fake Store API**: For fetching the product data.
-- **Local Storage**: For persisting cart data across sessions.
 
 ## Installation
 
